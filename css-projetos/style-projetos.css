@@ -1,0 +1,254 @@
+* {margin: 0;padding: 0;box-sizing: border-box;}
+html, body {height: 100%; font-family: 'Quicksand', sans-serif;}
+
+.headerProjetos {
+  width: 100%;
+  height: 8%;
+  background-color: #6f548c;
+}
+
+
+.headerProjetos .container {
+  height: 8%;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.headerProjetos .container img.logo2 {
+  max-width: 65px;
+  width: 100%;
+  height: 65px;
+  border-radius: 50px;
+  float: left;
+  margin-top: 0.8%;
+  margin-right: 17%;
+}
+
+
+.headerProjetos .container .menuDesktop {
+  float: left;
+  padding-top: 3%;
+  font-weight: lighter;
+}
+
+
+.headerProjetos .container .menuDesktop li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+
+.headerProjetos .container .menuDesktop li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5vh;
+  margin-right: 55px;
+  font-weight: lighter;
+  padding: 0 5px;
+}
+
+
+.menuDesktop li a:hover {
+  background-color: #644683;
+}
+
+
+section.projetos {
+  background-image: url("../imagens/Animacao2.gif");
+  animation: animate 30s ease-in-out infinite;
+  height: calc(100% - 8%);
+}
+
+
+.projetos .lSide {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  width: 48%;
+  height: 75%;
+  padding: 0 2%;
+  float: left;
+}
+
+
+.projetos .lSide .projectSingle .text {
+  width: 100%;
+  max-width: 350px;
+  float: right;
+  color: white;
+}
+
+
+.projetos .lSide .projectSingle h2 {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 5px;
+}
+
+
+.projetos .lSide .projectSingle p {
+  font-size: 0.9vw;
+  color: white;
+  font-weight: lighter;
+  text-align: right;
+  margin-right: 5px;
+}
+
+
+.projetos .lSide .projectSingle figure img {
+  max-width: 425px;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: 1px 1px 3px black;
+}
+
+
+.projetos .lSide .projectSingle figure {
+  float: right;
+  margin-bottom: 12%;
+}
+
+
+
+.projetos .rSide {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  width: 48%;
+  height: 90%;
+  padding: 0 2%;
+  float: left;
+  border-left: 1px solid #d1cfcf;
+}
+
+
+.projetos .rSide .projectSingle {
+  text-align: left;
+  padding-top: 25%;
+  padding-bottom: 15%;
+}
+
+
+.projetos .rSide .projectSingle .text {
+  width: 100%;
+  max-width: 350px;
+  float: left;
+  color: white;
+}
+
+
+.projetos .rSide .projectSingle h2 {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.projetos .rSide .projectSingle p {
+  font-size: 0.9vw;
+  color: white;
+  font-weight: lighter;
+  text-align: left;
+  margin-left: 5px;
+}
+
+
+.projetos .rSide .projectSingle figure {
+  float: left;
+}
+
+
+.projetos .rSide .projectSingle figure img {
+  max-width: 425px;
+  width: 100%;
+  border: 1px solid white;
+  box-shadow: 1px 1px 3px black;
+}
+
+
+
+@media screen and (max-width: 2100px) {
+  .projetos {
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .projetos .lSide .projectSingle figure {
+    margin: 0;
+  }
+  .projetos .rSide .projectSingle {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .projetos .lSide .projectSingle h2 {
+    font-size: 2.5vw;
+  }
+  .projetos .lSide .projectSingle p {
+    font-size: 1.4vw;
+  }
+
+  .projetos .rSide .projectSingle h2 {
+    font-size: 2.5vw;
+  }
+  .projetos .rSide .projectSingle p {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .headerProjetos .container img.logo2 {
+    margin-right: 10%;
+    margin-left: 8%;
+    margin-top: 1%;
+  }
+  .headerProjetos .container .menuDesktop {
+    padding-top:4%;
+  }
+  .headerProjetos .container .menuDesktop li a {
+    font-size: 2.5vh;
+    margin-right: 20px;
+  }
+  .projetos .lSide .projectSingle h2 {
+    margin-bottom: 35%;
+    text-align: center;
+  }
+  .projetos .lSide .projectSingle p {
+    display: none;
+  }
+  .projetos .rSide .projectSingle {
+    margin-top: 50%;
+    padding-bottom: 30%;
+  }
+  .projetos .rSide .projectSingle h2 {
+    text-align: center;
+  }
+  .projetos .rSide .projectSingle p {
+    display: none;
+  }
+
+}
+
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+}
